@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Sustainability Score</h1>
+        
+        <div>
+            <label for="foot">Distance by Foot (km): </label>
+            <input type="number" id="foot" placeholder="Enter distance in km">
+        </div>
+        <div>
+            <label for="bicycle">Distance by Bicycle (km): </label>
+            <input type="number" id="bicycle" placeholder="Enter distance in km">
+        </div>
+        <div>
+            <label for="public_transport">Distance by Public Transport (km): </label>
+            <input type="number" id="public_transport" placeholder="Enter distance in km">
+        </div>
+        <div>
+            <label for="car">Distance by Car (km): </label>
+            <input type="number" id="car" placeholder="Enter distance in km">
+        </div>
+        
+        <button onclick="calculateScore()">Calculate Sustainability Score</button>
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
